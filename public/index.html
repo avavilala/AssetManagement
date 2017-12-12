@@ -1,0 +1,81 @@
+<html ng-app="my_module">
+
+<head>
+
+</head>
+<script src="./node_modules/angular/angular.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script> -->
+<script src="./public/js/test.js"></script>
+<script src="./node_modules/angular-route/angular-route.js"></script>
+<link href="./public/styles/style.css" rel="stylesheet" />
+
+<body>
+
+    <div>
+        <h1 align="center" class="header" style="font-family: Arial">Welcome to Asset Management</h1>
+    </div>
+    <div class="topMenu">
+        <nav>
+            <ul>
+                <li><a href="#!/home">HOME</a></li>
+                <li><a href="#!/add_assets">ADD Assets</a></li>
+                <li><a href="#!/manageAssets">MANAGE Assets</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mainContent">
+        <div class="ng-view"></div>
+    </div>
+
+
+    <div class="footer" align="center">
+        <p>Ashweeza Vavilala</p>
+    </div>
+
+    <!-- {{show()}} -->
+    <!-- <section>
+        <button ng-click="show()">SHOW Assets</button>
+    </section>
+
+    <div ng-controller="my_controller">
+        <div>
+            <p>Asset Name: <input type="text " ng-model="assetname "></p>
+            <p>Asset ID: <input type="text " ng-model="assetID "></p>
+
+        </div>
+        <button ng-click="add()">ADD Asset</button>
+    </div>
+     <div>
+            {{testt}}
+        </div> 
+    <table>
+        <thead>
+            <tr>
+                <th>ASSET NAME</th>
+                <th>ASSET ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="asset in assetlist ">
+                <td>
+                    {{asset.assetname}}
+                </td>
+                <td>
+                    {{asset.assetID}}
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+-->
+    <!--
+<img ng-src="{{ asset.assetimage }} " style="height:100px;width:200px "></img></div> -->
+
+    <!--  <form action="http://127.0.0.1:8082/add_assets ", method="get ">
+      Asset Name : <input type="text " name="assetname "><br>
+      Asset ID : <input type = "text " name= "assetID "><br>
+      <input type="submit " value="Submit ">
+    </form> -->
+</body>
+
+</html>
