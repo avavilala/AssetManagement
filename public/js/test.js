@@ -91,7 +91,7 @@ var app = angular.module("my_module", ["ngRoute"]).config(function($routeProvide
 
         $scope.btntext = "Edit";
         $scope.enabledEdit[index] = false;
-        $http.post("/update_asset/" + $scope.asst.a_id, $scope.asst).then(function(response) {
+        $http.post("/update_asset/", $scope.asst).then(function(response) {
             $scope.testVar = response.data;
             $scope.assetlist = response.data;
             //show();

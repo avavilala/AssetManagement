@@ -54,7 +54,7 @@ app.post('/delete_asset/', function(req, res) {
         });
     });
 });
-app.put('/update_asset/:id', function(req, rese) {
+app.put('/update_asset/', function(req, rese) {
     //console.log(req.params._id);
     MongoClient.connect(url, function(err, db) {
         if (err) throw err;
