@@ -10,11 +10,6 @@ var url = "mongodb://ashweeza:ashweeza@ds044587.mlab.com:44587/mydatabase";
 //         uri: 'mongodb://assetmanagementavavilala:MwKFE4FM4YuullPNGqQX991dl3IWZ3GKaSlP7TMIRwwwrebFbLFy6KpICkMdLNbPS1ND2B2OwBAVnoL6uRjKUw==@assetmanagementavavilala.documents.azure.com:10250/mean?ssl=true&sslverifycertificate=false'
 //     }
 // };
-module.exports = {
-    db: {
-        uri: 'mongodb://assetmanagementavavilala:MwKFE4FM4YuullPNGqQX991dl3IWZ3GKaSlP7TMIRwwwrebFbLFy6KpICkMdLNbPS1ND2B2OwBAVnoL6uRjKUw==@assetmanagementavavilala.documents.azure.com:10250/mean?ssl=true&sslverifycertificate=false'
-    }
-};
 var port = process.env.PORT || 8082;
 app.use(express.static(__dirname + "/"));
 app.use(bodyparser.json())
