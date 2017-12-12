@@ -4,12 +4,12 @@ var MongoClient = require('mongodb').MongoClient;
 var objectID = require('mongodb').ObjectID;
 var bodyparser = require('body-parser');
 var url = "mongodb://ashweeza:ashweeza@ds044587.mlab.com:44587/mydatabase";
+var port = process.env.PORT || 8082;
 app.use(express.static(__dirname + "/"));
 app.use(bodyparser.json())
-var server = app.listen(8082, function(req, res) {
-    var host = server.address().address
-    var port = server.address().port
-    console.log('Server listening at %s:%s', host, port);
+var server = app.listen(port, function() {
+
+    console.log('App running at:' + port);
 });
 
 app.get('/', function(req, res) {
