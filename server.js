@@ -3,7 +3,7 @@ var app = express();
 var MongoClient = require('mongodb').MongoClient;
 var objectID = require('mongodb').ObjectID;
 var bodyparser = require('body-parser');
-var url = process.env.MongoClient.uri || "mongodb://ashweeza:ashweeza@ds044587.mlab.com:44587/mydatabase";
+var url = "mongodb://ashweeza:ashweeza@ds044587.mlab.com:44587/mydatabase";
 //var url = "mongodb://assetmanagementavavilala:MwKFE4FM4YuullPNGqQX991dl3IWZ3GKaSlP7TMIRwwwrebFbLFy6KpICkMdLNbPS1ND2B2OwBAVnoL6uRjKUw==@assetmanagementavavilala.documents.azure.com:10250/mean?ssl=true&sslverifycertificate=false";
 // module.exports = {
 //     db: {
