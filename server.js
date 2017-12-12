@@ -72,12 +72,6 @@ app.post('/add_asset', function(reqq, res) {
     }
     MongoClient.connect(url, function(err, db) {
         if (err) throw err;
-        // db.createCollection("assets", function(errs, res) {
-        //     if (errs) throw errs;
-        //     console.log('Collection Created Succesfully');
-        //     db.close();
-
-        // });
 
         db.collection("assets").insertOne(reqq.body, function(errv, resl) {
             if (errv) throw errv;
